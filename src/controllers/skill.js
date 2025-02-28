@@ -1,8 +1,8 @@
-const skillService = require('../services/skillService');
+const s = require('../services');
 
 async function addSkill(req, res) {
     try {
-        const result = await skillService.addSkill();
+        const result = await s.skill.addSkill();
         res.status(200).json('success');
     }
     catch (error) {
