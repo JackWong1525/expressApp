@@ -1,3 +1,5 @@
+//JWT token implementation
+
 const jwt = require('jsonwebtoken');
 
 async function validate(req, res, next) {
